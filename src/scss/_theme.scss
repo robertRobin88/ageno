@@ -13,11 +13,9 @@ figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
-	padding: 0;
 	border: 0;
 	vertical-align: baseline;
 	font-family: 'Raleway', sans-serif;
-	font-weight: 400;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -29,9 +27,7 @@ body {
 	font-family: 'Raleway', sans-serif;
 
 }
-ol, ul {
-	list-style: none;
-}
+
 blockquote, q {
 	quotes: none;
 }
@@ -54,6 +50,7 @@ table {
     float: right;
     ul{
         display: flex;
+        list-style: none;
         li{
             margin: 0 10px;
             line-height: 100px;
@@ -103,6 +100,9 @@ table {
 
 //footer
 footer{
+    ul{
+        padding: 0;
+    }
     .socialMedia{
         ul{
             display: flex;;
@@ -126,6 +126,7 @@ footer{
         margin-top: 40px;
     }
     ul{
+        list-style: none;
         li{
             margin: 20px 0;
             font-weight: 500;
@@ -234,6 +235,7 @@ footer{
         margin-top: 100px;
         font-size: 1.3rem;
         ul{
+            list-style: none;
             li{
                 margin: 20px 0;
                 font-weight: 500;
@@ -255,6 +257,7 @@ footer{
 			margin: auto;
             display: grid;
             height: 100vh;
+            list-style: none;
             padding: 50px 0 200px;
 
 			.current_page_item > a{
