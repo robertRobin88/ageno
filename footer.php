@@ -71,12 +71,13 @@
             </div>
             <div class="col-12 footer socialMedia">
                 <ul>
-                    <li><img src="<?php bloginfo('template_url')?>/dist/img/f.png" alt=""></li>
-                    <li><img src="<?php bloginfo('template_url')?>/dist/img/y.png" alt=""></li>
-                    <li><img src="<?php bloginfo('template_url')?>/dist/img/l.png" alt=""></li>
-                    <li><img src="<?php bloginfo('template_url')?>/dist/img/p.png" alt=""></li>
-                    <li><img src="<?php bloginfo('template_url')?>/dist/img/pi.png" alt=""></li>
-                    <li><img src="<?php bloginfo('template_url')?>/dist/img/n.png" alt=""></li>
+                    <li><img src="<?php bloginfo('template_url')?>/dist/img/f.svg" alt=""></li>
+                    <li><img src="<?php bloginfo('template_url')?>/dist/img/y.svg" alt=""></li>
+                    <li><img src="<?php bloginfo('template_url')?>/dist/img/l.svg" alt=""></li>
+                    <li><img src="<?php bloginfo('template_url')?>/dist/img/p.svg" alt=""></li>
+                    <li><img src="<?php bloginfo('template_url')?>/dist/img/b.svg" alt=""></li>
+                    <li><img src="<?php bloginfo('template_url')?>/dist/img/pi.svg" alt=""></li>
+                    <li><img src="<?php bloginfo('template_url')?>/dist/img/n.svg" alt=""></li>
                 </ul>
             </div>
             <div class="footerPadding"></div>
@@ -90,7 +91,7 @@
         </div>
     </div>
 </footer>
-    <?php wp_footer(); ?>
+    <!-- <?php wp_footer(); ?> -->
     <script src="<?php echo get_bloginfo('template_url')?>/dist/main.js"></script>
 </body>
 </html>

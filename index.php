@@ -2,6 +2,19 @@
 <?php get_header() ?>
     <div class="container">
         <div class="row">
+            <div class="col-12">
+                <div class="row topMarginMainPage">
+                    <div class="col-12 col-lg-6 leftTextTop">
+                        <h1>Wdrożenia sklepów internetowych Magento</h1>
+                        <p>Specjalizujemy się w zintegrowanych systemach e-commerce poprzez audyty, analizy, projektowanie UI/UX, wdrożenie, integracje, optymalizacje, rozwój i utrzymanie.</p>
+                    <button class="buttonTopMainPage">STWÓRZMY RAZEM PROJEKT</button>
+                    </div>
+                    <div class="col-12 col-lg-6 topPageSvgPicture">
+                        <img src="<?php bloginfo('template_url')?>/dist/img/ageno.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="clearfixTop"></div>
             <?php if (have_posts()) :
              while (have_posts()) : the_post();
                 $post_id = get_the_ID(); ?>

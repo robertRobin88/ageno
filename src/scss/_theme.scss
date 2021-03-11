@@ -15,7 +15,8 @@ time, mark, audio, video {
 	margin: 0;
 	border: 0;
 	vertical-align: baseline;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'segoe ui';
+    color: black;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -48,15 +49,16 @@ table {
 }
 .menu-top-menu-container{
     float: right;
+    margin-right: 15px;
     ul{
         display: flex;
         list-style: none;
         li{
-            margin: 0 10px;
-            line-height: 100px;
+            margin: 0 20px;
+            line-height: 80px;
             a{
                 color: black;
-                font-weight: 800;
+                font-weight: 700;
                 text-decoration: none;
                 transition: .3s;
                 &:hover{
@@ -94,20 +96,30 @@ table {
 }
 .logo{
     img{
-        height: 50px;
+        height: 65px;
+        padding-top: 7px;
+    }
+}
+
+.socialMedia{
+    ul{
+        display: flex;
+        li{
+            margin-right: 25px;
+        }
+        img{
+            height: 14px;
+        }
     }
 }
 
 //footer
+
 footer{
     ul{
         padding: 0;
     }
-    .socialMedia{
-        ul{
-            display: flex;;
-        }
-    }
+  
     padding-top: 50px;
     background-color: #f3f4f5;
     h6{
@@ -129,7 +141,7 @@ footer{
         list-style: none;
         li{
             margin: 20px 0;
-            font-weight: 500;
+            font-weight: 400;
         }
     }
     .footerPadding{
@@ -179,52 +191,42 @@ footer{
         display: block;
 		.hamburgerLine{
 			width: 100%;
-			height: 2px;
-			background-color: transparent;
+			height: 1px;
+			background-color: white;
 			position: absolute;
 			left: 0;
-			top: 50%;
-			transition: background-color .3s ease-in-out;
+			top: 1px;
+			transition: .2s ease-in-out;
 			&::before{
 				content: '';
 				width: 100%;
-				height: 2px;
+				height: 1px;
 				background-color: white;
-				top: 5px;
+				top: 8px;
 				position: absolute;
 				left: 0;
-				transition: transform .2s ease-in-out;
+				transition:  .2s ease-in-out;
 			}
-			&::after{
-				content: '';
-				width: 100%;
-				height: 2px;
-				background-color: white;
-				top: -5px;
-				position: absolute;
-				left: 0;
-				transition: transform .2s ease-in-out;
-			}
+			
 		}
 	}
 	
 }
 .hamburger--active{
 	.hamburgerLine{
-		background-color: transparent!important;
 		transition: .2s;
+        transform: translateY(3px) rotate(45deg);
+        height: 2px;
 	}
 	.hamburgerLine::before{
-		transform: translateY(-5px) rotate(45deg);
-	}
-	.hamburgerLine::after{
-		transform: translateY(5px) rotate(-45deg);
+		transform: translateY(-4px) rotate(90deg) translateX(-3px);
+        height: 2px;
 	}
 }
 .mobileNav{
 	position: absolute;
 	z-index: 999;
-	width: 100vw;
+	width: 100%;
 	height: 99vh;
 	background-color: white;
 	z-index: 1000;
@@ -232,13 +234,13 @@ footer{
 	display: none;
 	transition: .3s ease-in-out;
     .contactMenu{
-        margin-top: 100px;
         font-size: 1.3rem;
         ul{
             list-style: none;
-            li{
-                margin: 20px 0;
-                font-weight: 500;
+            ol{
+                margin: 0 0 20px;
+                font-weight: 400;
+                padding: 0;
             }
         }
         span{
@@ -256,22 +258,20 @@ footer{
 		ul{
 			margin: auto;
             display: grid;
-            height: 100vh;
             list-style: none;
-            padding: 50px 0 200px;
-
+            padding: 0;
 			.current_page_item > a{
 				text-decoration: line-through;
 			} 
 			li{
 				padding: 5px;
+                margin: 0 0 52px;
 				
 				a{
 					text-decoration: none;
                     font-weight: 900;
 					color: black;
-					text-transform: uppercase;
-					font-size: 2rem;
+					font-size: 2.5rem;
 					&:hover{
 						text-decoration: none;
 						color: red;
@@ -292,7 +292,14 @@ footer{
 }
 .mobileNav--active{
 	opacity: 1;
+    background-color: $grayMenu;
 	display: block;
+    overflow: auto;
+    padding: 20px auto;
+    height: 100%;
+}
+.header--active{
+    background-color: $grayMenu;
 }
 .bodyOverflow{
     overflow: hidden;
@@ -316,4 +323,101 @@ article{
 
 .sidebarLeft{
     margin: 50px 0;
+}
+
+.navBox{
+    margin-top: 85px;
+}
+.container {
+    max-width: 1240px;
+}
+
+.menuTop{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.menuAdress{
+    max-width: 430px;
+    ul{
+        padding: 0;
+    }
+}
+.topPageSvgPicture{
+    img{
+        max-width: 568px;
+        position: relative;
+        left: 25px;
+    }
+}
+.topMarginMainPage{
+    margin-top: 120px;
+    h1{
+        font-weight: 800;
+        line-height: 56px;
+        font-size: 3rem;
+        margin-top: 100px;
+        margin-bottom: 32px;
+    }
+    p{
+        line-height: 37px;
+        padding-right: 20px;
+        font-size: 1.4rem;
+    }
+}
+.buttonTopMainPage{
+    background-color: #fd4040;
+    padding: 16px 30px;
+    border: none;
+    color: white;
+    font-weight: 800;
+    margin-top: 27px;
+    font-size: 0.9rem;
+}
+.clearfixTop{
+    margin-top: 200px;
+}
+.leftTextTop{
+    padding-left: 15px;
+}
+
+@include media-breakpoint-down(lg){
+    .topMarginMainPage{
+        flex-direction: column-reverse;
+    }
+}
+
+@include media-breakpoint-down(md){
+    .topPageSvgPicture img{
+        width: 100%;
+        height: 100%;
+        left: 0;
+    }
+    .leftTextTop{
+        h1{
+            font-size: 2.5rem;
+        }
+    }
+    .topMarginMainPage{
+        margin-top: 36px;
+    }
+    .header .container{
+        margin-top: 6px;
+    }
+    body .mobileNav{
+        .menu{
+            ul{
+                li{
+                    margin: 0 0 30px;
+                    a{
+                        font-size: 2rem;
+                    }
+                   
+                }
+            }
+        }
+    }
+    .navBox{
+        margin-top: 60px;
+    }
 }
