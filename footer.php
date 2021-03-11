@@ -81,7 +81,7 @@
                 </ul>
             </div>
             <div class="footerPadding"></div>
-            <div class="col-12 col-xl-6">
+            <div class="col-12 col-xl-6 political">
                 <h6>Polityka Przywatności</h6>
             </div>
             <div class="col-12 col-xl-6 text-end">

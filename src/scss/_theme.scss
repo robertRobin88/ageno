@@ -75,11 +75,6 @@ table {
        height: auto;
    }
 }
-.item-news{
-    img{
-        height: 300px;
-    }
-}
 
 .postsMain{
     .clearfix {
@@ -260,9 +255,7 @@ footer{
             display: grid;
             list-style: none;
             padding: 0;
-			.current_page_item > a{
-				text-decoration: line-through;
-			} 
+			
 			li{
 				padding: 5px;
                 margin: 0 0 52px;
@@ -295,7 +288,7 @@ footer{
     background-color: $grayMenu;
 	display: block;
     overflow: auto;
-    padding: 20px auto;
+    margin: 70px auto;
     height: 100%;
 }
 .header--active{
@@ -388,6 +381,20 @@ article{
 }
 
 @include media-breakpoint-down(md){
+    body footer .inputButtonFooter{
+        display: block;
+        button{
+            width: 100%;
+        }
+    }
+    .text-end h6 {
+        text-align: center;
+        margin-top: 10px
+    } 
+    .political{
+        text-align: center;
+    }
+    
     .topPageSvgPicture img{
         width: 100%;
         height: 100%;
@@ -404,6 +411,11 @@ article{
     .header .container{
         margin-top: 6px;
     }
+    body .mobileNav--active{
+        margin: 0 0;
+        padding: 40px 0;
+
+    }
     body .mobileNav{
         .menu{
             ul{
@@ -419,5 +431,22 @@ article{
     }
     .navBox{
         margin-top: 60px;
+    }
+}
+
+//menu arrow
+
+#menu-item-60, #menu-item-59{
+    &::after{
+        font-family: "Font Awesome 5 Free"; 
+        font-weight: 900; 
+        content: "\f30b";
+        cursor: pointer;
+        color: $red;
+        font-size: 48px;
+        margin-left: 20px;
+        position: relative;
+        top: 8px;
+
     }
 }

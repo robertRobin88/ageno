@@ -1,5 +1,10 @@
 import "../scss/main.scss";
 
+import '@fortawesome/fontawesome-free/js/fontawesome';
+import '@fortawesome/fontawesome-free/js/solid';
+import '@fortawesome/fontawesome-free/js/regular';
+import '@fortawesome/fontawesome-free/js/brands';
+
 const hamburger = document.querySelector(".hamburger");
 const mobileNav = document.querySelector(".mobileNav");
 const bodyPage = document.querySelector("html");

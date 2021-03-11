@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php bloginfo('name'); ?> </title>
     <link rel="stylesheet" href="<?php bloginfo('template_url')?>/dist/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
     <!-- <?php wp_head(); ?> -->
 </head>
 <body>
@@ -33,7 +34,6 @@
     <div class="mobileNav">
         <div class="container">
             <div class="row">
-                <div class="row navBox d-flex">
                     <div class="col-12 col-lg-8 menu">
                          <?php wp_nav_menu(array('theme_location' => 'burger-menu')) ?>
                     </div> 
